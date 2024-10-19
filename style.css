@@ -5,7 +5,7 @@
 
 @font-face {
 	font-family: MyCustomFont;
-	src: url(../fonts/bs.ttf) format("truetype");
+	src: url(fonts/bs.ttf) format("truetype");
 	font-weight: 400;
 	font-style: normal
 }
@@ -213,7 +213,7 @@ header::before {
 }
 
 #about .swiper-slide {
-	background-image: url(../img/image.jpg);
+	background-image: url(img/image.jpg);
 	background-size: cover
 }
 
