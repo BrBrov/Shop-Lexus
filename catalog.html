@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AutoChoose</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<div class="wrapper">
+			<div class="header">
+				<a class="logo_header" href="index.html"><img src="img/logo.svg" alt=""></a>
+				<ul>
+					<li><a href="">Каталог</a></li>
+					<li><a href="">О нас</a></li>
+					<li><a href="">FAQ</a></li>
+					<li><a href="">Контакты</a></li>
+				</ul>
+				<div class="search">
+					<input type="text" name="" id="">
+					<button><img src="img/search.svg" alt=""></button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="header__marg"></div>
+	<section id="catalog">
+		<div class="wrapper">
+			<div class="catalog">
+				<div class="catalog_title">
+					<h2 class="h2">Фильтр по параметрам</h2>
+					<a class="catalog_btn" href="">Добавить авто</a>
+				</div>
+				<div class="catalog_content">
+
+					<div class="faq_container">
+
+						<div class="faq-item">
+							<div class="faq-question">
+								<p>Цена</p>
+								<span class="toggle-icon"><img src="img/filt.png" alt=""></span>
+							</div>
+							<div class="faq-answer">
+								<input type="range" id="price-max" min="2000" max="10000" value="10000" oninput="updatePrice()">
+								<div class="price-range">
+									<span id="price-min-value">2000</span> — <span id="price-max-value">10000</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="faq-item">
+							<div class="faq-question">
+								<p>Марка</p>
+								<span class="toggle-icon"><img src="img/filt.png" alt=""></span>
+							</div>
+							<div class="faq-answer">
+								<div class="boxes" id="filter_brand">
+									<label><input type="checkbox" value="brand1"><span>Марка 1</span></label>
+									<label><input type="checkbox" value="brand2"><span>Марка 2</span></label>
+								</div>
+							</div>
+						</div>
+
+						<div class="faq-item">
+							<div class="faq-question">
+								<p>Тип кузова</p>
+								<span class="toggle-icon"><img src="img/filt.png" alt=""></span>
+							</div>
+							<div class="faq-answer">
+								<div class="boxes" id="filter_type">
+									<label><input type="checkbox" value="sedan"><span>Седан</span></label>
+									<label><input type="checkbox" value="suv"><span>Внедорожник</span></label>
+								</div>
+							</div>
+							</div>
+						</div>
+
+						<div class="faq-item">
+							<div class="faq-question">
+								<p>Год</p>
+								<span class="toggle-icon"><img src="img/filt.png" alt=""></span>
+							</div>
+							<div class="faq-answer">
+								<div class="boxes" id="filter_years">
+									<label><input type="checkbox" value="2019"><span>2019</span></label>
+									<label><input type="checkbox" value="2020"><span>2020</span></label>
+									<label><input type="checkbox" value="2021" checked><span>2021</span></label>
+									<label><input type="checkbox" value="2022" checked><span>2022</span></label>
+									<label><input type="checkbox" value="2023"><span>2023</span></label>
+									<label><input type="checkbox" value="2024" checked><span>2024</span></label>
+								</div>
+							</div>
+						</div>
+
+						<div class="faq-item">
+							<div class="faq-question">
+								<p>Тип топлива</p>
+								<span class="toggle-icon"><img src="img/filt.png" alt=""></span>
+							</div>
+							<div class="faq-answer">
+								<div class="boxes" id="filter_fuel">
+									<label><input type="checkbox" value="petrol"><span>Бензин</span></label>
+									<label><input type="checkbox" value="diesel"><span>Дизель</span></label>
+								</div>
+							</div>
+						</div>
+
+						<div class="faq-item">
+							<div class="faq-question">
+								<p>Модель авто</p>
+								<span class="toggle-icon"><img src="img/filt.png" alt=""></span>
+							</div>
+							<div class="faq-answer">
+								<div class="boxes" id="filter_model">
+									<label><input type="checkbox" value="model1"><span>Модель 1</span></label>
+									<label><input type="checkbox" value="model2"><span>Модель 2</span></label>
+								</div>
+							</div>
+						</div>
+						<div class="faq-item">
+							<div class="faq-question">
+								<p>Объем, л</p>
+								<span class="toggle-icon"><img src="img/filt.png" alt=""></span>
+							</div>
+							<div class="faq-answer">
+								<div class="boxes" id="filter_volume">
+									<label><input type="checkbox" value="1.6"><span>1.6</span></label>
+									<label><input type="checkbox" value="2.0"><span>2.0</span></label>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="ct_content">
+						<div class="catalog_container">
+							<a class="car_card" href="">
+								<div class="car_img">
+									<img src="img/car1.png" alt="">
+								</div>
+								<div class="car_name">
+									<h3>Lexus nx 300 base 2024</h3>
+									<p>Тип топлива: Бензин</p>
+									<p>Объем: 2.0 литра</p>
+									<p>Привод: Полный</p>
+									<p>Пробег : 6324 км</p>
+									<h3 class="price">$18 000</h3>
+								</div>
+							</a>
+							<a class="car_card" href="">
+								<div class="car_img">
+									<img src="img/car1.png" alt="">
+								</div>
+								<div class="car_name">
+									<h3>Lexus nx 300 base 2024</h3>
+									<p>Тип топлива: Бензин</p>
+									<p>Объем: 2.0 литра</p>
+									<p>Привод: Полный</p>
+									<p>Пробег : 6324 км</p>
+									<h3 class="price">$18 000</h3>
+								</div>
+							</a>
+							<a class="car_card" href="">
+								<div class="car_img">
+									<img src="img/car1.png" alt="">
+								</div>
+								<div class="car_name">
+									<h3>Lexus nx 300 base 2024</h3>
+									<p>Тип топлива: Бензин</p>
+									<p>Объем: 2.0 литра</p>
+									<p>Привод: Полный</p>
+									<p>Пробег : 6324 км</p>
+									<h3 class="price">$18 000</h3>
+								</div>
+							</a>
+							<a class="car_card" href="">
+								<div class="car_img">
+									<img src="img/car1.png" alt="">
+								</div>
+								<div class="car_name">
+									<h3>Lexus nx 300 base 2024</h3>
+									<p>Тип топлива: Бензин</p>
+									<p>Объем: 2.0 литра</p>
+									<p>Привод: Полный</p>
+									<p>Пробег : 6324 км</p>
+									<h3 class="price">$18 000</h3>
+								</div>
+							</a>
+							<a class="car_card" href="">
+								<div class="car_img">
+									<img src="img/car1.png" alt="">
+								</div>
+								<div class="car_name">
+									<h3>Lexus nx 300 base 2024</h3>
+									<p>Тип топлива: Бензин</p>
+									<p>Объем: 2.0 литра</p>
+									<p>Привод: Полный</p>
+									<p>Пробег : 6324 км</p>
+									<h3 class="price">$18 000</h3>
+								</div>
+							</a>
+							<a class="car_card" href="">
+								<div class="car_img">
+									<img src="img/car1.png" alt="">
+								</div>
+								<div class="car_name">
+									<h3>Lexus nx 300 base 2024</h3>
+									<p>Тип топлива: Бензин</p>
+									<p>Объем: 2.0 литра</p>
+									<p>Привод: Полный</p>
+									<p>Пробег : 6324 км</p>
+									<h3 class="price">$18 000</h3>
+								</div>
+							</a>
+							<a class="car_card" href="">
+								<div class="car_img">
+									<img src="img/car1.png" alt="">
+								</div>
+								<div class="car_name">
+									<h3>Lexus nx 300 base 2024</h3>
+									<p>Тип топлива: Бензин</p>
+									<p>Объем: 2.0 литра</p>
+									<p>Привод: Полный</p>
+									<p>Пробег : 6324 км</p>
+									<h3 class="price">$18 000</h3>
+								</div>
+							</a>
+							<a class="car_card" href="">
+								<div class="car_img">
+									<img src="img/car1.png" alt="">
+								</div>
+								<div class="car_name">
+									<h3>Lexus nx 300 base 2024</h3>
+									<p>Тип топлива: Бензин</p>
+									<p>Объем: 2.0 литра</p>
+									<p>Привод: Полный</p>
+									<p>Пробег : 6324 км</p>
+									<h3 class="price">$18 000</h3>
+								</div>
+							</a>
+							<a class="car_card" href="">
+								<div class="car_img">
+									<img src="img/car1.png" alt="">
+								</div>
+								<div class="car_name">
+									<h3>Lexus nx 300 base 2024</h3>
+									<p>Тип топлива: Бензин</p>
+									<p>Объем: 2.0 литра</p>
+									<p>Привод: Полный</p>
+									<p>Пробег : 6324 км</p>
+									<h3 class="price">$18 000</h3>
+								</div>
+							</a>
+							<a class="car_card" href="">
+								<div class="car_img">
+									<img src="img/car1.png" alt="">
+								</div>
+								<div class="car_name">
+									<h3>Lexus nx 300 base 2024</h3>
+									<p>Тип топлива: Бензин</p>
+									<p>Объем: 2.0 литра</p>
+									<p>Привод: Полный</p>
+									<p>Пробег : 6324 км</p>
+									<h3 class="price">$18 000</h3>
+								</div>
+							</a>
+							<a class="car_card" href="">
+								<div class="car_img">
+									<img src="img/car1.png" alt="">
+								</div>
+								<div class="car_name">
+									<h3>Lexus nx 300 base 2024</h3>
+									<p>Тип топлива: Бензин</p>
+									<p>Объем: 2.0 литра</p>
+									<p>Привод: Полный</p>
+									<p>Пробег : 6324 км</p>
+									<h3 class="price">$18 000</h3>
+								</div>
+							</a>
+							<a class="car_card" href="">
+								<div class="car_img">
+									<img src="img/car1.png" alt="">
+								</div>
+								<div class="car_name">
+									<h3>Lexus nx 300 base 2024</h3>
+									<p>Тип топлива: Бензин</p>
+									<p>Объем: 2.0 литра</p>
+									<p>Привод: Полный</p>
+									<p>Пробег : 6324 км</p>
+									<h3 class="price">$18 000</h3>
+								</div>
+							</a>
+						</div>
+						<div class="krosh">
+							<a class="active" href="">1</a>
+							<a href="">2</a>
+							<a href="">3</a>
+							<a href="">4</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<footer>
+		<div class="wrapper">
+			<div class="footer">
+				<a href=""><img src="img/AutoChoose (1).svg" alt=""></a>
+				<ul>
+					<li><a href="">Каталог</a></li>
+					<li><a href="">О нас</a></li>
+					<li><a href="">FAQ</a></li>
+					<li><a href="">Контакты</a></li>
+				</ul>
+				<div class="soc_link">
+					<a href=""><img src="img/inst.svg" alt=""></a>
+					<a href=""><img src="img/yt.svg" alt=""></a>
+					<a href=""><img src="img/tg.svg" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
