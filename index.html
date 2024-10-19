@@ -2,145 +2,157 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoChoose</title>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoChoose</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <header>
-        <div class="wrapper">
-            <div class="header">
-                <a class="logo_header" href="index.html"><img src="img/logo.svg" alt=""></a>
-                <ul>
-                    <li><a href="">Каталог</a></li>
-                    <li><a href="about.html">О нас</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Контакты</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
-    <div class="header__marg"></div>
-    <section id="about">
 
+<header class="header">
+  <div class="header__wrapper">
+    <a class="header__logo" href="./index.html">
+      <img class="header__logo-image" src="./img/logo.svg" alt="Logo">
+    </a>
+    <nav class="header__navigator">
+      <img class="header__close-img" src="./img/close.svg" alt="Close menu">
+      <ul class="header__links">
+        <li class="header__link"><a href="">Каталог</a></li>
+        <li class="header__link"><a href="">О нас</a></li>
+        <li class="header__link"><a href="">FAQ</a></li>
+        <li class="header__link"><a href="">Контакты</a></li>
+        <li class="header__link"><a href="">Избранное</a></li>
+        <li class="header__link"><a href="">Аккаунт</a></li>
+      </ul>
+    </nav>
+    <div class="header__menu">
+      <img class="header__menu-img" src="img/menu.svg" alt="Open menu">
+    </div>
+    <search class="header__search">
+      <label class="header__label" for="header__input">
+        <input id="header__input" class="header__input" type="text" placeholder="Поиск" autocomplete="false">
+      </label>
+      <button class="header__search-btn"></button>
+    </search>
+  </div>
+</header>
 
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="wrapper">
-                        <div class="about">
-                            <h2>Новый Lexus RX в минске</h2>
-                            <hr>
-                            <p>Доступен в наличии и под заказ</p>
-                            <a href="">Подробнее <img src="img/arrow.svg" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="wrapper">
-                        <div class="about">
-                            <h2>Новый Lexus RX в минске</h2>
-                            <hr>
-                            <p>Доступен в наличии и под заказ</p>
-                            <a href="">Подробнее <img src="img/arrow.svg" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="wrapper">
-                        <div class="about">
-                            <h2>Новый Lexus RX в минске</h2>
-                            <hr>
-                            <p>Доступен в наличии и под заказ</p>
-                            <a href="">Подробнее <img src="img/arrow.svg" alt=""></a>
-                        </div>
-                    </div>
-                </div>
+<main class="main">
+  <section id="about">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="wrapper">
+            <div class="about">
+              <h2>Новый Lexus RX в минске</h2>
+              <hr>
+              <p>Доступен в наличии и под заказ</p>
+              <a href="">Подробнее <img src="img/arrow.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <!--      <div class="swiper-slide">-->
+        <!--        <div class="wrapper">-->
+        <!--          <div class="about">-->
+        <!--            <h2>Новый Lexus RX в минске</h2>-->
+        <!--            <hr>-->
+        <!--            <p>Доступен в наличии и под заказ</p>-->
+        <!--            <a href="">Подробнее <img src="img/arrow.svg" alt=""></a>-->
+        <!--          </div>-->
+        <!--        </div>-->
+        <!--      </div>-->
+        <!--      <div class="swiper-slide">-->
+        <!--        <div class="wrapper">-->
+        <!--          <div class="about">-->
+        <!--            <h2>Новый Lexus RX в минске</h2>-->
+        <!--            <hr>-->
+        <!--            <p>Доступен в наличии и под заказ</p>-->
+        <!--            <a href="">Подробнее <img src="img/arrow.svg" alt=""></a>-->
+        <!--          </div>-->
+        <!--        </div>-->
+        <!--      </div>-->
 
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
 
-    </section>
-    <section id="new">
-        <div class="wrapper">
-            <h2>Новинки</h2>
-            <div class="new">
-                <a class="car_card" href="">
-                    <div class="car_img">
-                        <img src="img/car1.png" alt="">
-                    </div>
-                    <div class="car_name">
-                        <h3>Lexus nx 300</h3>
-                    </div>
-                </a>
-                <a class="car_card" href="">
-                    <div class="car_img">
-                        <img src="img/car1.png" alt="">
-                    </div>
-                    <div class="car_name">
-                        <h3>Lexus nx 300</h3>
-                    </div>
-                </a>
-                <a class="car_card" href="">
-                    <div class="car_img">
-                        <img src="img/car1.png" alt="">
-                    </div>
-                    <div class="car_name">
-                        <h3>Lexus nx 300</h3>
-                    </div>
-                </a>
-                <a class="car_card" href="">
-                    <div class="car_img">
-                        <img src="img/car1.png" alt="">
-                    </div>
-                    <div class="car_name">
-                        <h3>Lexus nx 300</h3>
-                    </div>
-                </a>
-                <a class="car_card" href="">
-                    <div class="car_img">
-                        <img src="img/car1.png" alt="">
-                    </div>
-                    <div class="car_name">
-                        <h3>Lexus nx 300</h3>
-                    </div>
-                </a>
-                <a class="car_card" href="">
-                    <div class="car_img">
-                        <img src="img/car1.png" alt="">
-                    </div>
-                    <div class="car_name">
-                        <h3>Lexus nx 300</h3>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="wrapper">
-            <div class="footer">
-                <a href=""><img src="img/AutoChoose (1).svg" alt=""></a>
-                <ul>
-                    <li><a href="">Каталог</a></li>
-                    <li><a href="">О нас</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Контакты</a></li>
-                </ul>
-                <div class="soc_link">
-                    <a href=""><img src="img/inst.svg" alt=""></a>
-                    <a href=""><img src="img/yt.svg" alt=""></a>
-                    <a href=""><img src="img/tg.svg" alt=""></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="pages/faq/main.js"></script>
+  </section>
+  <section id="new">
+    <div class="wrapper">
+      <h2>Новинки</h2>
+      <div class="new">
+        <a class="car_card" href="">
+          <div class="car_img">
+            <img src="img/car1.png" alt="">
+          </div>
+          <div class="car_name">
+            <h3>Lexus nx 300</h3>
+          </div>
+        </a>
+        <a class="car_card" href="">
+          <div class="car_img">
+            <img src="img/car1.png" alt="">
+          </div>
+          <div class="car_name">
+            <h3>Lexus nx 300</h3>
+          </div>
+        </a>
+        <a class="car_card" href="">
+          <div class="car_img">
+            <img src="img/car1.png" alt="">
+          </div>
+          <div class="car_name">
+            <h3>Lexus nx 300</h3>
+          </div>
+        </a>
+        <a class="car_card" href="">
+          <div class="car_img">
+            <img src="img/car1.png" alt="">
+          </div>
+          <div class="car_name">
+            <h3>Lexus nx 300</h3>
+          </div>
+        </a>
+        <a class="car_card" href="">
+          <div class="car_img">
+            <img src="img/car1.png" alt="">
+          </div>
+          <div class="car_name">
+            <h3>Lexus nx 300</h3>
+          </div>
+        </a>
+        <a class="car_card" href="">
+          <div class="car_img">
+            <img src="img/car1.png" alt="">
+          </div>
+          <div class="car_name">
+            <h3>Lexus nx 300</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrapper">
+    <div class="footer">
+      <a href=""><img src="img/AutoChoose (1).svg" alt=""></a>
+      <ul>
+        <li><a href="">Каталог</a></li>
+        <li><a href="">О нас</a></li>
+        <li><a href="">FAQ</a></li>
+        <li><a href="">Контакты</a></li>
+      </ul>
+      <div class="soc_link">
+        <a href=""><img src="img/inst.svg" alt=""></a>
+        <a href=""><img src="img/yt.svg" alt=""></a>
+        <a href=""><img src="img/tg.svg" alt=""></a>
+      </div>
+    </div>
+  </div>
+</footer>
 </body>
 
 </html>
