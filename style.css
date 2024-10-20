@@ -292,16 +292,37 @@ body {
 	}
 
 	.header__navigator {
-		/*order: 3;*/
 		z-index: 3;
 		position: absolute;
-		/*display: none;*/
+		display: none;
 		width: 270px;
 		height: 500px;
 		left: -270px;
 		top: 0;
 		padding: 73px 135px 171px 28px;
 		background-color: black;
+	}
+
+	@keyframes menuAnimationShow {
+		from { left: -270px }
+		50% { left: -135px }
+		to { left: 0 }
+	}
+
+	@keyframes menuAnimationHide {
+		from { left: 0 }
+		50% { left: -135px }
+		to { left: -270px}
+	}
+
+	.open-menu {
+		display: block;
+		animation: menuAnimationShow 0.5s ease-in forwards;
+	}
+
+	.close-menu {
+		display: block;
+		animation: menuAnimationHide 0.5s ease-out forwards;
 	}
 
 	.header__links {
