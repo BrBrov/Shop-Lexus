@@ -354,6 +354,17 @@ body {
 
 /*---------------------header end--------------------*/
 
+/*---------------------main--------------------------*/
+
+.main {
+	display: flex;
+	padding-top: 120px;
+	flex-direction: column;
+}
+
+@media (max-width: 705px) {
+	padding-top: 126px;
+}
 
 .swiper {
 	width: 100%;
