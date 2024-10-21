@@ -371,7 +371,9 @@ body {
 }
 
 @media (max-width: 705px) {
-	padding-top: 126px;
+	.main {
+		padding-top: 126px;
+	}	
 }
 
 /*--------------------slider-------------------------*/
