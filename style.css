@@ -114,7 +114,7 @@ body {
 	display: flex;
 	width: 100%;
 	height: 120px;
-	padding: 35px 0 31px ;
+	padding: 35px 0 31px;
 	justify-content: center;
 	background: #000;
 }
@@ -289,6 +289,7 @@ body {
 		justify-content: space-between;
 		gap: 8px;
 	}
+
 	.header__logo {
 		width: 100%;
 		height: 34px;
@@ -312,15 +313,31 @@ body {
 	}
 
 	@keyframes menuAnimationShow {
-		from { left: -270px }
-		50% { left: -135px }
-		to { left: 0 }
+		from {
+			left: -270px
+		}
+
+		50% {
+			left: -135px
+		}
+
+		to {
+			left: 0
+		}
 	}
 
 	@keyframes menuAnimationHide {
-		from { left: 0 }
-		50% { left: -135px }
-		to { left: -270px}
+		from {
+			left: 0
+		}
+
+		50% {
+			left: -135px
+		}
+
+		to {
+			left: -270px
+		}
 	}
 
 	.open-menu {
@@ -373,7 +390,7 @@ body {
 @media (max-width: 705px) {
 	.main {
 		padding-top: 126px;
-	}	
+	}
 }
 
 /*--------------------slider-------------------------*/
@@ -393,7 +410,7 @@ body {
 	position: relative;
 	flex-shrink: 0;
 	width: 1920px;
-  transition: margin-left 0.5s ease-in-out;
+	transition: margin-left 0.5s ease-in-out;
 }
 
 .swiper__slide:nth-child(1) {
@@ -548,14 +565,14 @@ body {
 	-ms-flex-pack: center;
 	justify-content: center;
 	border: 2px solid #ffd61e;
-	border-radius: 0 0 20px 20px
-}
-
-footer {
-	padding: 40px 0 26px
+	border-radius: 0 0 20px 20px;
 }
 
 .footer {
+	padding: 40px 0 40px;
+}
+
+.footer__wrapper {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -565,18 +582,62 @@ footer {
 	flex-direction: column;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
-	align-items: center
+	align-items: center;
 }
 
-.footer ul {
-	display: -webkit-box;
-	display: -ms-flexbox;
+.footer__links {
 	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
+	margin: 40px 0 26px;
 	align-items: center;
 	gap: 60px;
-	margin: 40px 0 26px
+}
+
+.footer__link a {
+	font-family: Bezier Sans, sans-serif;
+	font-weight: 467;
+	font-size: 32px;
+	text-align: center;
+	color: #fff;
+}
+
+.footer__link a:hover {
+	color: #ffd61e;
+}
+
+.footer__info {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+.footer__address {
+	width: 327px;
+	font-family: "Bezier Sans", sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: #ffd61e;
+}
+
+@media (max-width: 1028px) {
+	.footer__address:nth-child(1) {
+		display: none;
+	}
+}
+
+@media (max-width: 668px) {
+	.footer__info {
+		flex-direction: column;
+		justify-content: center;
+		gap: 40px;
+	}
+
+	.soc_link {
+		align-self: center;
+	}
+
+	.footer__address {
+		width: 320px;
+	}
 }
 
 .soc_link {
