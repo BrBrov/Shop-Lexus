@@ -8,7 +8,6 @@ function menuHandler() {
     menu.classList.add('close-menu');
     setTimeout(() => {menu.classList.remove('close-menu')}, 500);
   });
-
 }
 
 window.onload = () => {
