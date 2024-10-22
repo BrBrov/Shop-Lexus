@@ -471,6 +471,10 @@ body {
 	border-radius: 0 0 20px 20px;
 }
 
+.range__contianer {
+	position: relative;
+}
+
 /*---------------footer-----------*/
 footer {
 	padding: 40px 0 26px
@@ -509,6 +513,8 @@ footer {
 	align-items: center;
 	gap: 64px
 }
+
+/*-----------footer----------*/
 
 .input_box label,
 .text_box label {
@@ -865,15 +871,48 @@ footer {
 	color: #fff
 }
 
-.faq-answer input[type=range],
 .faq-answer select {
+	appearance: none;
+	position: relative;
 	width: 100%;
 	padding: 8px;
 	border-radius: 5px;
 	border: 1px solid #ffc400;
 	background-color: #333;
 	color: #fff;
-	height: 50px
+	height: 50px;
+}
+
+.range__track {
+	width: 222px;
+	height: 2px;
+	margin: 33px auto 25px 15px;
+	background-color: #7b6d6d;
+}
+
+.faq-answer input[type=range] {
+	position: absolute;
+	appearance: none;
+	width: 222px;
+	left: 35px;
+	top: 17px;
+}
+
+.faq-answer input[type=range]::-webkit-slider-runnable-track,
+.faq-answer input[type=range]::-ms-track,
+.faq-answer input[type=range]::-moz-range-track {
+	appearance: none;
+	height: 1px;
+}
+
+.faq-answer input[type=range]::-webkit-slider-thumb {
+	appearance: none;
+	width: 12px;
+	height: 12px;
+	margin-top: -22px;
+	border-radius: 50%;
+	background-color: #fff;
+	pointer-events: auto;
 }
 
 .auto_rec .car_card,
@@ -965,8 +1004,6 @@ footer {
 	background: #ffd61e;
 	color: #000
 }
-
-
 
 @media (min-width:768px) and (max-width:1430px) {
 	ul>li>a {

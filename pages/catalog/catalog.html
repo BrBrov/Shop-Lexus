@@ -58,8 +58,10 @@
 									<p>Цена</p>
 									<span class="toggle-icon"><img src="../../img/filt.png" alt=""></span>
 								</div>
-								<div class="faq-answer">
-									<input type="range" id="price-max" min="2000" max="10000" value="10000" oninput="updatePrice()">
+								<div class="faq-answer range__contianer">
+									<div class="range__track"></div>
+									<input class="min__range" type="range" id="price-max" min="2000" max="10000" value="2000">
+									<input class="max__range" type="range" id="price-max" min="2000" max="10000" value="10000">
 									<div class="price-range">
 										<span id="price-min-value">2000</span> — <span id="price-max-value">10000</span>
 									</div>
