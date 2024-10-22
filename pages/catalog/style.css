@@ -455,6 +455,21 @@ body {
 	width: 100%;
 }
 
+.car_img .heart {
+	position: absolute;
+	width: 40px;
+	top: 21px;
+	right: 21px;
+}
+
+.unmarked {
+	content: url('../../img/heart.svg');
+}
+
+.marked {
+	content: url('../../img/red_heart.svg');
+}
+
 .car_name {
 	width: 100%;
 	height: 158px;
