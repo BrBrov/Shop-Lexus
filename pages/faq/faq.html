@@ -11,19 +11,34 @@
 </head>
 
 <body>
-    <header>
-        <div class="wrapper">
-            <div class="header">
-                <a class="logo_header" href="../../index.html"><img src="../../img/logo.svg" alt=""></a>
-                <ul>
-                    <li><a href="">Каталог</a></li>
-                    <li><a href="">О нас</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Контакты</a></li>
-                </ul>
-            </div>
+    <header class="header">
+        <div class="header__wrapper">
+          <a class="header__logo" href="../../index.html">
+            <img class="header__logo-image" src="../../img/logo.svg" alt="Logo">
+          </a>
+          <nav class="header__navigator">
+            <img class="header__close-img" src="../../img/close.svg" alt="Close menu">
+            <ul class="header__links">
+              <li class="header__link"><a href="../../pages/catalog/catalog.html">Каталог</a></li>
+              <li class="header__link"><a href="../../pages/about/about.html">О нас</a></li>
+              <li class="header__link"><a href="../../pages/faq/faq.html">FAQ</a></li>
+              <li class="header__link"><a href="../../pages/contact/contact.html">Контакты</a></li>
+              <li class="header__link"><a href="../../pages/like/like.html">Избранное</a></li>
+              <li class="header__link"><a href="../../pages/auth/auth.html">Аккаунт</a></li>
+              <li class="header__link"><a class="header__link-account" href=""></a></li>
+            </ul>
+          </nav>
+          <div class="header__menu">
+            <img class="header__menu-img" src="../../img/menu.svg" alt="Open menu">
+          </div>
+          <search class="header__search">
+            <label class="header__label" for="header__input">
+              <input id="header__input" class="header__input" type="text" placeholder="Поиск" autocomplete="false">
+            </label>
+            <button class="header__search-btn"></button>
+          </search>
         </div>
-    </header>
+      </header>
     <div class="header__marg"></div>
     <section id="faq">
         <div class="wrapper">
@@ -86,22 +101,26 @@
             </div>
         </div>
     </section>
-    <footer>
-        <div class="wrapper">
-            <div class="footer">
-                <a href=""><img src="../../img/AutoChoose (1).svg" alt=""></a>
-                <ul>
-                    <li><a href="">Каталог</a></li>
-                    <li><a href="">О нас</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Контакты</a></li>
-                </ul>
-                <div class="soc_link">
-                    <a href=""><img src="../../img/inst.svg" alt=""></a>
-                    <a href=""><img src="../../img/yt.svg" alt=""></a>
-                    <a href=""><img src="../../img/tg.svg" alt=""></a>
-                </div>
+    <footer class="footer">
+        <div class="footer__wrapper">
+          <a href=""><img src="../../img/AutoChoose (1).svg" alt="Logo"></a>
+          <ul class="footer__links">
+            <li class="footer__link"><a href="../../pages/catalog/catalog.html">Каталог</a></li>
+            <li class="footer__link"><a href="../../pages/about/about.html">О нас</a></li>
+            <li class="footer__link"><a href="../../pages/faq/faq.html">FAQ</a></li>
+            <li class="footer__link"><a href="../../pages/contact/contact.html">Контакты</a></li>
+          </ul>
+          <div class="footer__info">
+            <div class="footer__address"></div>
+            <div class="soc_link">
+              <a href=""><img src="../../img/inst.svg" alt="instagramm"></a>
+              <a href=""><img src="../../img/yt.svg" alt="youtube"></a>
+              <a href=""><img src="../../img/tg.svg" alt="telegramm"></a>
             </div>
+            <div class="footer__address">
+              г. Минск, ул Вещинского, д. 4 +375 39 357 55 35
+            </div>
+          </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
