@@ -95,8 +95,6 @@ body {
 
 /*---------------------header--------------------*/
 
-/*---------------------header--------------------*/
-
 .header {
 	position: fixed;
 	z-index: 3;
@@ -498,12 +496,12 @@ body {
 	position: relative;
 }
 
-/*---------------footer-----------*/
-footer {
-	padding: 40px 0 26px
+/*--------------footer--------------*/
+.footer {
+	padding: 40px 0 40px;
 }
 
-.footer {
+.footer__wrapper {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -516,15 +514,59 @@ footer {
 	align-items: center;
 }
 
-.footer ul {
-	display: -webkit-box;
-	display: -ms-flexbox;
+.footer__links {
 	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
+	margin: 40px 0 26px;
 	align-items: center;
 	gap: 60px;
-	margin: 40px 0 26px;
+}
+
+.footer__link a {
+	font-family: MyCustomFont, sans-serif;
+	font-weight: 467;
+	font-size: 32px;
+	text-align: center;
+	color: #fff;
+}
+
+.footer__link a:hover {
+	color: #ffd61e;
+}
+
+.footer__info {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+.footer__address {
+	width: 327px;
+	font-family: MyCustomFont, sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: #ffd61e;
+}
+
+@media (max-width: 1028px) {
+	.footer__address:nth-child(1) {
+		display: none;
+	}
+}
+
+@media (max-width: 668px) {
+	.footer__info {
+		flex-direction: column;
+		justify-content: center;
+		gap: 40px;
+	}
+
+	.soc_link {
+		align-self: center;
+	}
+
+	.footer__address {
+		width: 320px;
+	}
 }
 
 .soc_link {
@@ -536,8 +578,6 @@ footer {
 	align-items: center;
 	gap: 64px
 }
-
-/*-----------footer----------*/
 
 .input_box label,
 .text_box label {
