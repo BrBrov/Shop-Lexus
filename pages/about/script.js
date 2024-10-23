@@ -10,20 +10,7 @@ function menuHandler() {
   });
 }
 
-function sliderHandle() {
-  const slidesElements = document.querySelectorAll('.swiper__slide');
-  const pagination = document.querySelectorAll('.swiper-pag');
-
-  
-}
-
 window.onload = () => {
   const openMenuBtn = document.querySelector('.header__menu');
   openMenuBtn.addEventListener('click', menuHandler);
-
-  const swiperWrapper = document.querySelector('.swiper__wrapper');
-  swiperWrapper.addEventListener('mousemove', (e) => console.log(e));
 };
-
-console.log('done!!!');
-
