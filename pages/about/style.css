@@ -185,7 +185,7 @@ body {
 }
 
 .header__link a {
-	font-family: Bezier Sans, sans-serif;
+	font-family: MyCustomFont, sans-serif;
 	font-weight: 467;
 	font-size: 22px;
 	text-align: center;
@@ -576,7 +576,7 @@ body {
 }
 
 .footer__link a {
-	font-family: Bezier Sans, sans-serif;
+	font-family: MyCustomFont, sans-serif;
 	font-weight: 467;
 	font-size: 32px;
 	text-align: center;
@@ -595,7 +595,7 @@ body {
 
 .footer__address {
 	width: 327px;
-	font-family: "Bezier Sans", sans-serif;
+	font-family: MyCustomFont, sans-serif;
 	font-weight: 400;
 	font-size: 20px;
 	color: #ffd61e;
