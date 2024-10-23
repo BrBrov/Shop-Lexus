@@ -4,10 +4,10 @@
 
 
 @font-face {
-	font-family: MyCustomFont, sans-serif;
-	src: url("../../fonts/bs.ttf") format("truetype");
+	font-family: MyCustomFont;
+	src: url(../../fonts/bs.ttf) format("truetype");
 	font-weight: 400;
-	font-style: normal
+	font-style: normal;
 }
 
 * {
@@ -27,7 +27,7 @@ button {
 }
 
 ul>li>a {
-	font-family: MyCustomFont,sans-serif;
+	font-family: MyCustomFont, sans-serif;
 	font-style: normal;
 	font-weight: 467;
 	font-size: 32px;
@@ -767,7 +767,7 @@ footer {
 
 .faq_container {
 	margin: 0 auto;
-	font-family: Arial, sans-serif;
+	font-family: MyCustomFont, sans-serif;
 	color: #fff;
 	background-color: #000;
 	display: -webkit-box;
@@ -915,7 +915,7 @@ footer {
 	line-height: 61px;
 	text-transform: none;
 	color: #fff;
-	font-family: MyCustomFont
+	font-family: MyCustomFont, sans-serif;
 }
 
 .right_contact {
@@ -1171,7 +1171,7 @@ footer {
 }
 
 .catalog_content .faq-question p {
-	font-family: Montserrat;
+	font-family: Montserrat, sans-serif;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 32px;
@@ -1256,7 +1256,7 @@ footer {
 }
 
 .car_name p {
-	font-family: Montserrat;
+	font-family: Montserrat, sans-serif;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 16px;
@@ -1351,7 +1351,7 @@ footer {
 	color: #fff;
 	font-size: 50px;
 	font-weight: 500;
-	font-family: Montserrat;
+	font-family: Montserrat, sans-serif;
 	margin-bottom: 30px
 }
 
@@ -1361,7 +1361,7 @@ footer {
 	color: #fff;
 	font-size: 32px;
 	font-weight: 600;
-	font-family: Montserrat
+	font-family: Montserrat, sans-serif;
 }
 
 .car_info_card a {

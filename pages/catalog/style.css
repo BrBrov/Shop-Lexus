@@ -7,7 +7,7 @@
 	font-family: MyCustomFont;
 	src: url(../../fonts/bs.ttf) format("truetype");
 	font-weight: 400;
-	font-style: normal
+	font-style: normal;
 }
 
 * {
@@ -253,6 +253,12 @@ body {
 	}
 }
 
+@media (max-width: 790px) {
+	.header__links {
+		gap: 3px;
+	}
+}
+
 @media (max-width: 768px) {
 	.header__search {
 		max-width: 144px;
@@ -398,18 +404,20 @@ body {
 	}
 }
 
+@media (max-width: 699px) {
+	.catalog__block {
+		flex-direction: column;
+		align-items: center;
+		gap: 24px;
+	}
+}
+
 .catalog_content {
 	display: flex;
-	width: 100%;
+	width: 318px;
 	flex-direction: column;
 	justify-content: flex-start;
 	gap: 20px;
-}
-
-@media (max-width: 699px) {
-	.catalog_content {
-		display: none;
-	}
 }
 
 .apply__btn {
@@ -790,6 +798,18 @@ footer {
 	background: url("data:image/svg+xml;charset=utf8,%3Csvg width='14' height='10' viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.6953 1.78235L5.75338 9.69306C5.55728 9.88839 5.29115 10 5.01101 10C4.73087 10 4.46473 9.88839 4.26863 9.69306L0.304652 5.74468C-0.101551 5.34008 -0.101551 4.67039 0.304652 4.26578C0.710855 3.86118 1.38319 3.86118 1.78939 4.26578L5.01101 7.47471L12.2106 0.303453C12.6168 -0.101151 13.2891 -0.101151 13.6953 0.303453C14.1016 0.708057 14.1016 1.36379 13.6953 1.78235Z' fill='%23000000'/%3E%3C/svg%3E") center/contain no-repeat
 }
 
+.catalog_title h2 {
+	text-align: start;
+	margin: 0;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: start;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: start;
+	width: auto
+}
+
 .catalog_title {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -801,16 +821,10 @@ footer {
 	margin-bottom: 30px
 }
 
-.catalog_title h2 {
-	text-align: start;
-	margin: 0;
-	-webkit-box-pack: start;
-	-ms-flex-pack: start;
-	justify-content: start;
-	-webkit-box-align: start;
-	-ms-flex-align: start;
-	align-items: start;
-	width: auto
+@media (max-width: 705px) {
+		.catalog_title {
+		display: none
+	}
 }
 
 .catalog_btn {
@@ -832,6 +846,17 @@ footer {
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center
+}
+
+.low-quality {
+	display: none;
+}
+
+@media (max-width: 705px) {
+	.low-quality {
+		display: flex;
+		align-self: center;
+	}
 }
 
 .auto_rec,
@@ -1113,10 +1138,6 @@ footer {
 		max-width: 684px
 	}
 
-	.header ul {
-		gap: 20px
-	}
-
 	.wrapper {
 		padding: 0 20px
 	}
@@ -1374,10 +1395,6 @@ footer {
 		gap: 20px
 	}
 
-	.header ul {
-		gap: 16px
-	}
-
 	.wrapper {
 		padding: 0 18px
 	}
@@ -1458,10 +1475,6 @@ footer {
 		-ms-flex-align: center;
 		align-items: center
 	} */
-
-	.catalog_title {
-		display: none
-	}
 
 	.catalog_btn_none {
 		display: -webkit-box;

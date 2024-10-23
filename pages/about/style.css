@@ -274,7 +274,7 @@ body {
 
 	.header__links {
 		justify-content: space-between;
-		gap: 18px;
+		gap: 3px;
 	}
 }
 
@@ -1495,10 +1495,6 @@ body {
 		font-size: 64px;
 		line-height: 78px;
 		max-width: 684px
-	}
-
-	.header ul {
-		gap: 20px
 	}
 
 	.wrapper {

@@ -123,7 +123,13 @@ body {
 }
 
 .header__marg {
-	height: 119px
+	height: 120px
+}
+
+@media (max-width: 705px) {
+	.header__marg {
+		height: 126px;
+	}
 }
 
 /*---------------------header--------------------*/
@@ -1312,12 +1318,6 @@ body {
 	gap: 24px;
 }
 
-@media (max-width: 704px){
-	.catalog_content {
-		display: none;
-	}
-}
-
 .catalog__block {
 	display: flex;
 	flex-direction: row;
@@ -1328,6 +1328,13 @@ body {
 @media (max-width: 730px){
 	.catalog__block {
 		gap: 10px;
+	}
+}
+
+@media (max-width: 688px){
+	.catalog__block {
+		flex-direction: column;
+		align-items: center;
 	}
 }
 
