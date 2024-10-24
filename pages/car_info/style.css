@@ -425,11 +425,6 @@ body {
 	align-items: start
 }
 
-/* #about .swiper-slide {
-	background-image: url(../img/image.jpg);
-	background-size: cover
-} */
-
 .about hr {
 	border-top: 4px solid #fff;
 	width: 200px
@@ -441,14 +436,8 @@ body {
 	font-weight: 500;
 	font-size: 48px;
 	color: #000;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
 	padding: 20px 40px;
 	gap: 20px;
@@ -457,6 +446,8 @@ body {
 	background: #ffd61e;
 	border-radius: 10px
 }
+
+/*---------------SWIPER----------*/
 
 .slider__swiper {
 	position: relative;
@@ -496,6 +487,84 @@ body {
 .swiper-pagination-bullet-active {
 	--swiper-pagination-color: #fff;
 }
+
+/*-------------SWIPER end-------------*/
+
+/*-------------Gallery----------------*/
+
+.galleria {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.galleria {
+		display: flex;
+		width: 100%;
+		min-height: 646px;
+		flex-direction: column;
+	}
+	
+	.galleria__left,
+	.galleria__right {
+		display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
+	.galleria__item .galerria__img {
+		object-fit: cover;
+	}
+
+	.galleria__left .galleria__item:nth-child(1) img {
+		content: url('../../img/gallery1.png');
+	}
+
+	.galleria__left .galleria__item:nth-child(2) img {
+		content: url('../../img/gallery2.png');
+	}
+
+	.galleria__right .galleria__item:nth-child(1) img {
+		content: url('../../img/gallery3.png');
+	}
+
+	.galleria__right .galleria__item:nth-child(2) img {
+		content: url('../../img/gallery4.png');
+	}
+
+	.galleria__right .galleria__item:nth-child(3) img {
+		content: url('../../img/gallery5.png');
+	}
+}
+
+@media (max-width: 520px) {
+	.galleria__img {
+		width: 320px;
+		height: 240px;
+	}
+
+	.galleria__left .galleria__item:nth-child(1) img {
+		content: url('../../img/gallery1-mini.png');
+	}
+
+	.galleria__left .galleria__item:nth-child(2) img {
+		content: url('../../img/gallery2-mini.png');
+	}
+
+	.galleria__right .galleria__item:nth-child(1) img {
+		content: url('../../img/gallery3-mini.png');
+	}
+
+	.galleria__right .galleria__item:nth-child(2) img {
+		content: url('../../img/gallery4-mini.png');
+	}
+
+	.galleria__right .galleria__item:nth-child(3) img {
+		content: url('../../img/gallery5-mini.png');
+	}
+}
+
+/*-------------Gallery----------------*/
 
 #new {
 	padding: 60px 0 90px
@@ -645,11 +714,7 @@ body {
 }
 
 .soc_link {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
 	gap: 64px
 }
@@ -664,8 +729,6 @@ body {
 }
 
 .car_div {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	gap: 48px
 }
@@ -713,15 +776,8 @@ body {
 }
 
 .preim_box {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
 	flex-direction: column;
-	-webkit-box-align: start;
-	-ms-flex-align: start;
 	align-items: flex-start;
 	padding: 20px 24px;
 	gap: 12px;
@@ -1450,20 +1506,20 @@ body {
 	gap: 178px
 }
 
-/* .myTwoSwiper {
-	max-width: 553px;
-	margin: 0
-} */
-
 .car_info_card {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
-	flex-direction: column
+	flex-direction: column;
 }
+
+@media (max-width: 390px) {
+	.car_info_card {
+		padding: 0 12px;
+	}
+}
+
 
 .car_info_card h1 {
 	color: #fff;
@@ -1492,14 +1548,8 @@ body {
 }
 
 .car_info_card a {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
 	padding: 20px 40px;
 	gap: 20px;
@@ -1510,6 +1560,21 @@ body {
 	font-size: 48px;
 	line-height: 73px;
 	color: #fff
+}
+
+.car_info_card a img {
+	content: url('../../img/arrow_w.png');
+}
+
+@media (max-width: 390px) {
+	.car_info_card a {
+		padding: 20px;
+		font-size: 32px;
+	}
+
+	.car_info_card a img {
+		content: url('../../img/arrow_w_small.svg');
+	}
 }
 
 @media (min-width:768px) and (max-width:1430px) {
@@ -1524,11 +1589,11 @@ body {
 	}
 
 	.header ul {
-		gap: 20px
+		gap: 0;
 	}
 
 	.wrapper {
-		padding: 0 20px
+		padding: 20px 20px 0;
 	}
 
 	.logo_header img {
@@ -1772,6 +1837,12 @@ body {
 		font-size: 36px
 	}
 
+	.car_info_card p {
+		display: inline-block;
+		font-size: 24px;
+		word-break: break-word;
+	}
+
 	p {
 		font-size: 16px
 	}
@@ -1784,12 +1855,12 @@ body {
 		gap: 20px
 	}
 
-	.header ul {
-		gap: 16px
+	.wrapper {
+		padding: 20px 12px 0;
 	}
 
-	.wrapper {
-		padding: 0 18px
+	.slider__swiper {
+		display: none;
 	}
 
 	.about {
@@ -1851,13 +1922,6 @@ body {
 		width: 45px
 	}
 
-
-	/*-----------WTF?---------*/
-	.header ul,
-	.mySwiper .swiper-pagination {
-		display: none
-	}
-
 	.catalog_content {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -1914,6 +1978,10 @@ body {
 		max-width: unset
 	}
 
+	.car_info_card {
+		padding: 0 12px;
+	}
+
 	.car_info_card a {
 		width: 100%;
 		font-size: 24px;
@@ -1923,11 +1991,6 @@ body {
 	.car_info_card h1,
 	.car_info_card h2 {
 		font-size: 40px
-	}
-
-	.myTwoSwiper img {
-		width: 100%;
-		height: 100%
 	}
 
 	.auto_rec {
