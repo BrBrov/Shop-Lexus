@@ -187,6 +187,7 @@ body {
 .header__links {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 	gap: 24px;
 }
 
