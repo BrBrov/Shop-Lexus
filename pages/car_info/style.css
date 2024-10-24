@@ -657,7 +657,10 @@ body {
 /*-----------footer end----------*/
 
 .about_us {
-	margin: 68px 0 50px
+	display: flex;
+	flex-direction: column;
+	margin: 177px 0 50px;
+	gap: 20px;
 }
 
 .car_div {
