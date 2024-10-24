@@ -2015,6 +2015,11 @@ body {
 		font-size: 25px;
 		gap: 15px
 	}
+
+	.auth_btn,
+	.auth_btn_two {
+		font-size: 24px;
+	}
 }
 
 .boxes input[type=checkbox] {
