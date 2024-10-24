@@ -2,189 +2,217 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoChoose</title>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoChoose</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../../plugins/swiper.css">
+  <script src="../../plugins/swiper.js"></script>
+  <script src="./script.js"></script>
 </head>
 
 <body>
-    <header>
-        <div class="wrapper">
-            <div class="header">
-                <a class="logo_header" href="index.html"><img src="img/logo.svg" alt=""></a>
-                <ul>
-                    <li><a href="">Каталог</a></li>
-                    <li><a href="">О нас</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Контакты</a></li>
-                </ul>
+  <header class="header">
+    <div class="header__wrapper">
+      <a class="header__logo" href="../../index.html">
+        <img class="header__logo-image" src="../../img/logo.svg" alt="Logo">
+      </a>
+      <nav class="header__navigator">
+        <img class="header__close-img" src="../../img/close.svg" alt="Close menu">
+        <ul class="header__links">
+          <li class="header__link"><a href="../../pages/catalog/catalog.html">Каталог</a></li>
+          <li class="header__link"><a href="../../pages/about/about.html">О нас</a></li>
+          <li class="header__link"><a href="../../pages/faq/faq.html">FAQ</a></li>
+          <li class="header__link"><a href="../../pages/contact/contact.html">Контакты</a></li>
+          <li class="header__link"><a href="../../pages/like/like.html">Избранное</a></li>
+          <li class="header__link"><a href="../../pages/auth/auth.html">Аккаунт</a></li>
+          <li class="header__link"><a class="header__link-account" href=""></a></li>
+        </ul>
+      </nav>
+      <div class="header__menu">
+        <img class="header__menu-img" src="../../img/menu.svg" alt="Open menu">
+      </div>
+      <search class="header__search">
+        <label class="header__label" for="header__input">
+          <input id="header__input" class="header__input" type="text" placeholder="Поиск" autocomplete="false">
+        </label>
+        <button class="header__search-btn"></button>
+      </search>
+    </div>
+  </header>
+
+  <div class="header__marg"></div>
+
+  <section>
+    <div class="wrapper">
+      <div class="car_card_info">
+        <div class="slider__swiper">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="swiper-image" src="../../img/car_img.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="../../img/car_img1.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="../../img/car_img2.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="../../img/car_img3.png" alt="">
+              </div>
             </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
-    </header>
-    <div class="header__marg"></div>
-    <section>
-        <div class="wrapper">
-            <div class="car_card_info">
-                <div class="swiper myTwoSwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="./img/car_img.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/car_img.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/car_img.png" alt="">
-                        </div>
-
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-                <div class="car_info_card">
-                    <h1>LEXUS IS 300</h1>
-                    <h2>$15 000</h2>
-                    <p>Экономия от рынка РБ: -$4 500</p>
-                    <a href="">Консультация <img src="./img/arrow_w.png" alt=""></a>
-                </div>
-
-            </div>
+        <div class="car_info_card">
+          <h1>LEXUS IS 300</h1>
+          <h2>$15 000</h2>
+          <p>Экономия от рынка РБ: -$4 500</p>
+          <a href="">Консультация <img src="../../img/arrow_w.png" alt=""></a>
         </div>
-    </section>
-    <section>
-        <div class="wrapper">
 
-            <div class="about_us">
-                <h4><b>Подробнее о авто</b></h4>
-                <h4>
-                    LEXUS IS 300 2019 года напрямую из США! Менеджеры АвтоКаргоТрейд помогут проверить, купить, доставить любое авто с аукционов Америки. Колоссальная разница от покупки машин с аукционов США (учитывая все расходы и ремонт) 20-40% от авторынка в Беларуси.
-                    <br><br> Успейте сделать ставку на аукционе и почувствуйте непревзойденное качество и комфорт LEXUS IS 300 2019. Не упускайте свой шанс воплотить свои автомобильные мечты в реальность с АвтоКаргоТрейд!
-                    <br><br> Все лоты проходят тщательную проверку, исключены ошибки в подготовке документов, полное сопровождение до передачи автомобиля клиенту.
-                    <br><br> Офис компании находиться в Минске, авто возможно доставить в любой город Беларуси.
-                </h4>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="wrapper">
 
-            </div>
+      <div class="about_us">
+        <h4><b>Подробнее о авто</b></h4>
+        <h4>
+          LEXUS IS 300 2019 года напрямую из США! Менеджеры АвтоКаргоТрейд помогут проверить, купить, доставить любое
+          авто с аукционов Америки. Колоссальная разница от покупки машин с аукционов США (учитывая все расходы и
+          ремонт) 20-40% от авторынка в Беларуси.
+          <br><br> Успейте сделать ставку на аукционе и почувствуйте непревзойденное качество и комфорт LEXUS IS 300
+          2019. Не упускайте свой шанс воплотить свои автомобильные мечты в реальность с АвтоКаргоТрейд!
+          <br><br> Все лоты проходят тщательную проверку, исключены ошибки в подготовке документов, полное сопровождение
+          до передачи автомобиля клиенту.
+          <br><br> Офис компании находиться в Минске, авто возможно доставить в любой город Беларуси.
+        </h4>
 
+      </div>
+
+    </div>
+  </section>
+  <section id="preim">
+    <div class="wrapper">
+
+      <div class="preim preim_info">
+        <div class="preim_box pr">
+          <p>Год</p>
+          <h6>2019</h6>
         </div>
-    </section>
-    <section id="preim">
-        <div class="wrapper">
-
-            <div class="preim preim_info">
-                <div class="preim_box pr">
-                    <p>Год</p>
-                    <h6>2019</h6>
-                </div>
-                <div class="preim_box pr">
-                    <p>Тип топлива</p>
-                    <h6>Бензин</h6>
-                </div>
-                <div class="preim_box pr">
-                    <p>ТИп кузова</p>
-                    <h6>Седан</h6>
-                </div>
-                <div class="preim_box pr">
-                    <p>Объем, л</p>
-                    <h6>2.0</h6>
-                </div>
-                <div class="preim_box pr2">
-                    <p>Цвет</p>
-                    <h6>Зеленый</h6>
-                </div>
-                <div class="preim_box pr2">
-                    <p>Привод</p>
-                    <h6>Задний</h6>
-                </div>
-                <div class="preim_box pr2">
-                    <p>Местонахождениe</p>
-                    <h6>На аукционе в США</h6>
-                </div>
-
-            </div>
+        <div class="preim_box pr">
+          <p>Тип топлива</p>
+          <h6>Бензин</h6>
         </div>
-    </section>
+        <div class="preim_box pr">
+          <p>ТИп кузова</p>
+          <h6>Седан</h6>
+        </div>
+        <div class="preim_box pr">
+          <p>Объем, л</p>
+          <h6>2.0</h6>
+        </div>
+        <div class="preim_box pr2">
+          <p>Цвет</p>
+          <h6>Зеленый</h6>
+        </div>
+        <div class="preim_box pr2">
+          <p>Привод</p>
+          <h6>Задний</h6>
+        </div>
+        <div class="preim_box pr2">
+          <p>Местонахождениe</p>
+          <h6>На аукционе в США</h6>
+        </div>
 
-    <section id="auto_rec">
-        <div class="wrapper">
-            <h4><b>Похожие авто</b></h4>
-            <div class="auto_rec">
-                <a class="car_card" href="">
-                    <div class="car_img">
-                        <img src="img/car1.png" alt="">
-                    </div>
-                    <div class="car_name">
-                        <h3>Lexus nx 300 base 2024</h3>
-                        <p>Тип топлива: Бензин</p>
-                        <p>Объем: 2.0 литра</p>
-                        <p>Привод: Полный</p>
-                        <p>Пробег : 6324 км</p>
-                        <h3 class="price">$18 000</h3>
-                    </div>
-                </a>
-                <a class="car_card" href="">
-                    <div class="car_img">
-                        <img src="img/car1.png" alt="">
-                    </div>
-                    <div class="car_name">
-                        <h3>Lexus nx 300 base 2024</h3>
-                        <p>Тип топлива: Бензин</p>
-                        <p>Объем: 2.0 литра</p>
-                        <p>Привод: Полный</p>
-                        <p>Пробег : 6324 км</p>
-                        <h3 class="price">$18 000</h3>
-                    </div>
-                </a>
-                <a class="car_card" href="">
-                    <div class="car_img">
-                        <img src="img/car1.png" alt="">
-                    </div>
-                    <div class="car_name">
-                        <h3>Lexus nx 300 base 2024</h3>
-                        <p>Тип топлива: Бензин</p>
-                        <p>Объем: 2.0 литра</p>
-                        <p>Привод: Полный</p>
-                        <p>Пробег : 6324 км</p>
-                        <h3 class="price">$18 000</h3>
-                    </div>
-                </a>
-                <a class="car_card last" href="">
-                    <div class="car_img">
-                        <img src="img/car1.png" alt="">
-                    </div>
-                    <div class="car_name">
-                        <h3>Lexus nx 300 base 2024</h3>
-                        <p>Тип топлива: Бензин</p>
-                        <p>Объем: 2.0 литра</p>
-                        <p>Привод: Полный</p>
-                        <p>Пробег : 6324 км</p>
-                        <h3 class="price">$18 000</h3>
-                    </div>
-                </a>
-            </div>
+      </div>
+    </div>
+  </section>
+  <section id="auto_rec">
+    <div class="wrapper">
+      <h4><b>Похожие авто</b></h4>
+      <div class="auto_rec">
+        <a class="car_card" href="">
+          <div class="car_img">
+            <img src="../../img/car1.png" alt="">
+          </div>
+          <div class="car_name">
+            <h3>Lexus nx 300 base 2024</h3>
+            <p>Тип топлива: Бензин</p>
+            <p>Объем: 2.0 литра</p>
+            <p>Привод: Полный</p>
+            <p>Пробег : 6324 км</p>
+            <h3 class="price">$18 000</h3>
+          </div>
+        </a>
+        <a class="car_card" href="">
+          <div class="car_img">
+            <img src="../../img/car1.png" alt="">
+          </div>
+          <div class="car_name">
+            <h3>Lexus nx 300 base 2024</h3>
+            <p>Тип топлива: Бензин</p>
+            <p>Объем: 2.0 литра</p>
+            <p>Привод: Полный</p>
+            <p>Пробег : 6324 км</p>
+            <h3 class="price">$18 000</h3>
+          </div>
+        </a>
+        <a class="car_card" href="">
+          <div class="car_img">
+            <img src="../../img/car1.png" alt="">
+          </div>
+          <div class="car_name">
+            <h3>Lexus nx 300 base 2024</h3>
+            <p>Тип топлива: Бензин</p>
+            <p>Объем: 2.0 литра</p>
+            <p>Привод: Полный</p>
+            <p>Пробег : 6324 км</p>
+            <h3 class="price">$18 000</h3>
+          </div>
+        </a>
+        <a class="car_card last" href="">
+          <div class="car_img">
+            <img src="../../img/car1.png" alt="">
+          </div>
+          <div class="car_name">
+            <h3>Lexus nx 300 base 2024</h3>
+            <p>Тип топлива: Бензин</p>
+            <p>Объем: 2.0 литра</p>
+            <p>Привод: Полный</p>
+            <p>Пробег : 6324 км</p>
+            <h3 class="price">$18 000</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <a href=""><img src="../../img/AutoChoose (1).svg" alt="Logo"></a>
+      <ul class="footer__links">
+        <li class="footer__link"><a href="../../pages/catalog/catalog.html">Каталог</a></li>
+        <li class="footer__link"><a href="../../pages/about/about.html">О нас</a></li>
+        <li class="footer__link"><a href="../../pages/faq/faq.html">FAQ</a></li>
+        <li class="footer__link"><a href="../../pages/contact/contact.html">Контакты</a></li>
+      </ul>
+      <div class="footer__info">
+        <div class="footer__address"></div>
+        <div class="soc_link">
+          <a href=""><img src="../../img/inst.svg" alt="instagramm"></a>
+          <a href=""><img src="../../img/yt.svg" alt="youtube"></a>
+          <a href=""><img src="../../img/tg.svg" alt="telegramm"></a>
         </div>
-    </section>
-    <footer>
-        <div class="wrapper">
-            <div class="footer">
-                <a href=""><img src="img/AutoChoose (1).svg" alt=""></a>
-                <ul>
-                    <li><a href="">Каталог</a></li>
-                    <li><a href="">О нас</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Контакты</a></li>
-                </ul>
-                <div class="soc_link">
-                    <a href=""><img src="img/inst.svg" alt=""></a>
-                    <a href=""><img src="img/yt.svg" alt=""></a>
-                    <a href=""><img src="img/tg.svg" alt=""></a>
-                </div>
-            </div>
+        <div class="footer__address">
+          г. Минск, ул Вещинского, д. 4 +375 39 357 55 35
         </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
