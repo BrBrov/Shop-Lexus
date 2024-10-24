@@ -624,6 +624,25 @@ body {
 	width: 100%
 }
 
+/*----------heart-------*/
+
+.car_img .heart {
+	position: absolute;
+	width: 40px;
+	top: 21px;
+	right: 21px;
+}
+
+.unmarked {
+	content: url('../../img/heart.svg');
+}
+
+.marked {
+	content: url('../../img/red_heart.svg');
+}
+
+/*---------heart end------*/
+
 .car_name {
 	width: 100%;
 	height: 158px;
@@ -1616,13 +1635,14 @@ body {
 	}
 
 	.car_card {
+		position: relative;
 		display: block;
 		width: 354px;
 		max-width: 354px;
 		height: 591px
 	}
 
-	.footer ul li a {
+		.footer ul li a {
 		font-size: 32px
 	}
 
