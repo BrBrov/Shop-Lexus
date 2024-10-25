@@ -581,6 +581,58 @@ body {
 	gap: 64px
 }
 
+.footer {
+	padding: 40px 0 40px;
+}
+
+.footer__wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.footer__links {
+	display: flex;
+	margin: 40px 0 26px;
+	align-items: center;
+	gap: 60px;
+}
+
+.footer__link a {
+	font-family: MyCustomFont, sans-serif;
+	font-weight: 467;
+	font-size: 32px;
+	text-align: center;
+	color: #fff;
+}
+
+.footer__link a:hover {
+	color: #ffd61e;
+}
+
+.footer__info {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+.footer__address {
+	width: 327px;
+	font-family: MyCustomFont, sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: #ffd61e;
+}
+
+/*----------footer end----------*/
+
 .input_box label,
 .text_box label {
 	font-style: normal;
@@ -764,22 +816,15 @@ body {
 }
 
 .boxes input[type=checkbox] {
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
 	display: inline-flex;
 	vertical-align: middle;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
 	border: 2px solid #ffd61e;
 	border-radius: 8px;
 	cursor: pointer;
-	-ms-flex-negative: 0;
+
 	flex-shrink: 0;
 	width: 30px;
 	height: 30px;
@@ -788,15 +833,11 @@ body {
 
 .boxes input[type=checkbox] {
 	font-size: inherit;
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	display: inline-block;
 	white-space: normal;
-	-webkit-appearance: none;
-	-moz-appearance: none;
 	appearance: none;
 	background: 0 0;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	line-height: 1.1;
 	max-width: none;
@@ -1038,7 +1079,7 @@ body {
 }
 
 .car_name p {
-	font-family: Montserrat;
+	font-family: Montserrat, sans-serif;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 16px;
@@ -1085,56 +1126,6 @@ body {
 .krosh .active {
 	background: #ffd61e;
 	color: #000
-}
-
-.footer {
-	padding: 40px 0 40px;
-}
-
-.footer__wrapper {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-}
-
-.footer__links {
-	display: flex;
-	margin: 40px 0 26px;
-	align-items: center;
-	gap: 60px;
-}
-
-.footer__link a {
-	font-family: MyCustomFont, sans-serif;
-	font-weight: 467;
-	font-size: 32px;
-	text-align: center;
-	color: #fff;
-}
-
-.footer__link a:hover {
-	color: #ffd61e;
-}
-
-.footer__info {
-	display: flex;
-	justify-content: center;
-	gap: 30px;
-}
-
-.footer__address {
-	width: 327px;
-	font-family: MyCustomFont, sans-serif;
-	font-weight: 400;
-	font-size: 20px;
-	color: #ffd61e;
 }
 
 @media (max-width: 1028px) {
