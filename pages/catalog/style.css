@@ -404,6 +404,16 @@ body {
 	}
 }
 
+@media (max-width: 1366px) {
+	.catalog__block {
+		gap: 10px;
+	}
+
+	.catalog_container {
+		gap: 14px;
+	}
+}
+
 @media (max-width: 699px) {
 	.catalog__block {
 		flex-direction: column;
@@ -954,6 +964,12 @@ body {
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	gap: 40px
+}
+
+@media (max-width: 1366px) {
+	.catalog_container {
+		gap: 14px;
+	}
 }
 
 .catalog_content .faq-answer {
