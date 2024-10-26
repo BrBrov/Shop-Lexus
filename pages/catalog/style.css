@@ -375,7 +375,6 @@ body {
 
 /*---------------------main--------------------------*/
 .main__catalog {
-	padding-top: 120px;
 	padding-top: 150px;
 	padding-bottom: 30px;
 }
@@ -834,7 +833,6 @@ body {
 	border: 2px solid #ffd61e;
 	border-radius: 8px;
 	cursor: pointer;
-
 	flex-shrink: 0;
 	width: 30px;
 	height: 30px;
@@ -1177,10 +1175,6 @@ body {
 }
 
 @media (min-width:768px) and (max-width:1430px) {
-	ul>li>a {
-		font-size: 20px
-	}
-
 	h2 {
 		font-size: 64px;
 		line-height: 78px;
@@ -1416,6 +1410,12 @@ body {
 	}
 }
 
+@media (max-width: 1024px) {
+	.footer ul li a {
+		font-size: 27px;
+	}
+}
+
 @media (max-width:768px) {
 	ul>li>a {
 		font-size: 18px
@@ -1484,10 +1484,6 @@ body {
 
 	.car_name {
 		height: 158px
-	}
-
-	.footer ul li a {
-		font-size: 32px
 	}
 
 	.footer ul {
@@ -1680,7 +1676,7 @@ body {
 
 	.footer ul li a {
 		font-size: 25px;
-		gap: 15px
+		gap: 15px;
 	}
 
 	.auth_btn, .auth_btn_two {
@@ -1690,15 +1686,10 @@ body {
 
 .boxes input[type=checkbox] {
 	font-size: inherit;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
 	display: inline-block;
 	white-space: normal;
-	-webkit-appearance: none;
-	-moz-appearance: none;
 	appearance: none;
 	background: 0 0;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	line-height: 1.1;
 	max-width: none;
@@ -1708,8 +1699,6 @@ body {
 }
 
 .boxes label {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
@@ -1723,21 +1712,14 @@ body {
 }
 
 .boxes input[type=checkbox] {
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	display: -ms-inline-flexbox;
 	display: inline-flex;
 	vertical-align: middle;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
 	border: 2px solid #ffd61e;
 	border-radius: 8px;
 	cursor: pointer;
-	-ms-flex-negative: 0;
 	flex-shrink: 0;
 	width: 30px;
 	height: 30px;
