@@ -24,6 +24,3 @@ window.onload = () => {
   const swiperWrapper = document.querySelector('.swiper__wrapper');
   swiperWrapper.addEventListener('mousemove', (e) => console.log(e));
 };
-
-console.log('done!!!');
-
