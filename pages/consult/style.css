@@ -148,6 +148,12 @@ body {
 	align-items: center;
 }
 
+@media (max-width: 1560px) {
+	.header__wrapper {
+		margin: 0 20px;
+	}
+}
+
 .header__logo {
 	order: 1;
 	display: flex;

@@ -216,6 +216,12 @@ body {
 	background: url('./img/search.svg');
 }
 
+@media (max-width: 1560px) {
+	.header__wrapper {
+		margin: 0 20px;
+	}
+}
+
 @media (max-width: 1497px) {
 	.header {
 		padding: 12px 32px 14px;
@@ -244,7 +250,7 @@ body {
 
 	.header__links {
 		justify-content: space-between;
-		gap: 18px;
+		gap: 0;
 	}
 }
 

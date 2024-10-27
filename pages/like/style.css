@@ -154,6 +154,12 @@ body {
 	align-items: center;
 }
 
+@media (max-width: 1560px) {
+	.header__wrapper {
+		margin: 0 20px;
+	}
+}
+
 .header__logo {
 	order: 1;
 	display: flex;
@@ -1319,7 +1325,7 @@ body {
 
 @media (max-width: 1440px) {
 	.catalog__wrapper {
-		gap: 5px;
+		gap: 15px;
 	}
 }
 
