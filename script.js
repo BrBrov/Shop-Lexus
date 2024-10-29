@@ -12,9 +12,7 @@ function menuHandler() {
 
 function sliderHandle() {
   const slidesElements = document.querySelectorAll('.swiper__slide');
-  const pagination = document.querySelectorAll('.swiper-pag');
-
-  
+  const pagination = document.querySelectorAll('.swiper-pag');  
 }
 
 window.onload = () => {
