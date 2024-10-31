@@ -16,11 +16,50 @@ function autoResize() {
   console.log((textarea.scrollHeight - 60) +'px');
 }
 
+async function fileLoader(){
+  const optionsFilePicker = {
+    types: [{
+      description: "Images",
+      accept: {
+        "image/*": [".png", ".gif", ".jpeg", ".jpg", ".webp"],
+      },
+    }],
+    excludeAcceptAllOption: false
+  };
+
+  try {
+    const filePicker = await window.showOpenFilePicker(optionsFilePicker);
+
+    if (!filePicker[0].name.match(/\.(png|gif|jpeg|jpg|webp)$/i)) {
+      const customErr = new Error({message: "Wrong file type"});
+      customErr.message = 'Choose vaild file!';
+      throw customErr;
+    }
+
+    const file = await filePicker[0].getFile();
+
+    //TODO Here maust be  some logic to handle file
+
+    const img = document.querySelector('.add_img-image');
+
+    console.log(img);
+
+    img.src = URL.createObjectURL(file);
+
+    //Example file load
+  } catch (err) {
+    console.dir(err.message);
+  }  
+}
+
 const textarea = document.querySelector('#car__desription');
 
 window.onload = () => {
   const openMenuBtn = document.querySelector('.header__menu');
-  openMenuBtn.addEventListener('click', menuHandler);  
+  openMenuBtn.addEventListener('click', menuHandler);
+  
+  const fileAdd = document.querySelector('.add_img-file');
+  fileAdd.addEventListener('click', fileLoader);
 
   autoResize();
 
