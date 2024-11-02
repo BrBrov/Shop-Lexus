@@ -31,18 +31,17 @@ async function fileLoader(){
     const filePicker = await window.showOpenFilePicker(optionsFilePicker);
 
     if (!filePicker[0].name.match(/\.(png|gif|jpeg|jpg|webp)$/i)) {
-      const customErr = new Error({message: "Wrong file type"});
-      customErr.message = 'Choose vaild file!';
+      const customErr = new Error();
+      customErr.name = 'Wrong file type';
+      customErr.message = 'Select valid file!';
       throw customErr;
     }
 
     const file = await filePicker[0].getFile();
 
-    //TODO Here maust be  some logic to handle file
+    //TODO Here must be some logic to handle file
 
     const img = document.querySelector('.add_img-image');
-
-    console.log(img);
 
     img.src = URL.createObjectURL(file);
 
