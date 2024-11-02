@@ -57,7 +57,7 @@ window.onload = () => {
   const openMenuBtn = document.querySelector('.header__menu');
   openMenuBtn.addEventListener('click', menuHandler);
   
-  const fileAdd = document.querySelector('.add_img-file');
+  const fileAdd = document.querySelector('.add_img');
   fileAdd.addEventListener('click', fileLoader);
 
   autoResize();
