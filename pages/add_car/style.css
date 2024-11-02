@@ -912,6 +912,12 @@ body {
 	resize: none;
 }
 
+@media (max-width: 500px) {
+	.text_box textarea {
+		font-size: 20px;
+	}
+}
+
 .add_car button {
 	font-family: "Montserrat Alternates";
 	font-style: normal;
@@ -2076,10 +2082,7 @@ body {
 }
 
 .boxes input[type=checkbox] {
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
 	display: inline-flex;
 	vertical-align: middle;
 	-webkit-box-pack: center;
@@ -2091,7 +2094,6 @@ body {
 	border: 2px solid #ffd61e;
 	border-radius: 8px;
 	cursor: pointer;
-	-ms-flex-negative: 0;
 	flex-shrink: 0;
 	width: 30px;
 	height: 30px;
