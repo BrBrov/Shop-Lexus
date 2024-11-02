@@ -820,8 +820,14 @@ body {
 }
 
 .add_img {
+	position: relative;
+	z-index: 1;
+	display: flex;
 	height: 553px;
+	justify-content: center;
+	align-items: center;
 	cursor: pointer;
+	border-radius: 20px;
 }
 
 .add_img-image {
@@ -830,17 +836,35 @@ body {
 	width: 562px;
 	height: 553px;
 	object-fit: contain;
+	border-radius: 20px;
+	opacity: 0.7;
 }
 
 .add_img-file {
-	position: relative;
+	position: absolute;
 	z-index: 3;
 	display: block;
-	width: 562px;
-	height: 553px;
-	top: -553px;
+	width: 120px;
+	height: 120px;
 	background: url('../../img/cross_add.svg') center no-repeat;
-	backdrop-filter: brightness(60%);
+}
+
+@media (max-width: 600px) {
+	.add_img {
+		height: 453px;
+	}
+}
+
+@media (max-width: 500px) {
+	.add_img {
+		height: 380px;
+	}
+}
+
+@media (max-width: 500px) {
+	.add_img {
+		height: 250px;
+	}
 }
 
 .adder_img {
@@ -856,7 +880,7 @@ body {
 	height: 100%;
 	-o-object-fit: cover;
 	object-fit: cover;
-	border-radius: 15px
+	border-radius: 15px;
 }
 
 .adder_img div {
@@ -1673,13 +1697,12 @@ body {
 
 	.add_img {
 		width: 100%;
-		height: 553px;
+		/*height: 553px;*/
 		overflow: hidden;
-		border-radius: 20px
 	}
 
 	.car_img_content {
-		gap: 20px;
+		gap: 12px;
 		flex-direction: column;
 		align-items: center;
 	}
