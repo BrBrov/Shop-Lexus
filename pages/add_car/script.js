@@ -13,7 +13,6 @@ function menuHandler() {
 function autoResize() {
   textarea.style.height = 'auto';
   textarea.style.height = (textarea.scrollHeight + 7) +'px';
-  console.log((textarea.scrollHeight - 60) +'px');
 }
 
 async function fileLoader(){

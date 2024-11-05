@@ -701,6 +701,10 @@ body {
     padding: 0 18px;
   }
 
+  .first-slide {
+    background-size: auto 135%;
+  }
+
   .about {
     width: 360px;
     padding: 40px 0;
@@ -766,6 +770,11 @@ body {
 
   .swiper-pagination {
     display: none;
+  }
+
+  .first-slide {
+    background-position: top;
+    background-size: 550px 355px;
   }
 
   .footer ul li a {
