@@ -15,9 +15,13 @@
 }
 
 .faq-item {
-	/* width: 318px; */
+	width: 318px;
 	border: 2px solid #ffd61e;
 	border-radius: 14px;
+}
+
+.faq_container .faq-item {
+	width: unset;
 }
 
 .faq-question {
