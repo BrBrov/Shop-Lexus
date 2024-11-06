@@ -1,0 +1,150 @@
+/*--------------------slider-------------------------*/
+
+.swiper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.wrapper-slide {
+  display: flex;
+  width: 100%;
+  max-height: 770px;
+  padding-left: 252px;
+}
+
+.first-slide {
+  background: url('../img/image1.jpg') center/cover no-repeat;
+}
+
+.second-slide {
+  background: url('../img/image2.jpg') center/cover no-repeat;
+}
+
+.third-slide {
+  background: url('../img/image3.jpg') center/cover no-repeat;
+}
+
+.swiper-pagination {
+  width: 108px;
+}
+
+.swiper-pagination-bullets {
+  --swiper-pagination-bottom: 22px;
+}
+
+.swiper-pagination-bullet {
+  --swiper-pagination-bullet-width: 20px;
+  --swiper-pagination-bullet-height: 20px;
+  --swiper-pagination-bullet-horizontal-gap: 12px;
+  --swiper-pagination-bullet-inactive-color: #ffd61e;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  --swiper-pagination-color: #fff;
+}
+
+.about {
+  display: flex;
+  max-width: 100%;
+  min-height: 770px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 64px;
+}
+
+.about hr {
+  border-top: 4px solid #fff;
+  width: 200px;
+}
+
+.about a {
+  display: flex;
+  width: 440px;
+  height: 99px;
+  padding: 20px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  color: #000;
+  background: #ffd61e;
+  border-radius: 10px;
+}
+
+@media (max-width: 1170px) {
+  .wrapper-slide {
+    padding-left: 85px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1430px) {
+  .wrapper-slide {
+    padding-left: 125px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper-slide {
+    padding-left: 24px;
+  }
+
+  .about {
+    width: 360px;
+    padding: 40px 0;
+    min-height: 520px;
+    gap: 20px;
+  }
+
+  .first-slide {
+    background-size: auto 135%;
+  }
+
+  .about a img {
+    width: 45px;
+  }
+}
+
+@media (max-width: 490px) {
+  .about a {
+    width: 320px;
+    height: 84px;
+    padding: 20px 13px;
+    font-size: 36px;
+  }
+
+  .about a img {
+    width: 32px;
+    content: url('../img/arrow_small.svg');
+  }
+}
+
+@media (max-width: 440px) {
+  .about {
+    width: 320px;
+    height: 354px;
+    min-height: 354px;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  .first-slide {
+    background-position: top;
+    background-size: 550px 355px;
+  }
+}
+
+@media (max-width: 390px) {
+  .wrapper-slide {
+    padding-left: 13px;
+  }
+}
+
+/*----------------------slider end-------------------*/

@@ -1,0 +1,21 @@
+.catalog_content {
+	display: flex;
+	width: 318px;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 20px;
+}
+
+.catalog_content .faq-answer {
+	padding-left: 20px
+}
+
+.catalog_content .faq-question p {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 32px;
+	line-height: 100%;
+	letter-spacing: -.05em;
+	color: #fff
+}

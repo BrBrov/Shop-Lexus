@@ -1,0 +1,38 @@
+.krosh {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 5px;
+	margin-top: 40px
+}
+
+.krosh a {
+	color: #ffd61e;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+	font-size: 16px;
+	font-weight: 600;
+	background: 0 0;
+	border: 3px solid #ffd61e;
+	border-radius: 50px
+}
+
+.krosh .active {
+	background: #ffd61e;
+	color: #000
+}

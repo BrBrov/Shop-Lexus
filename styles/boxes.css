@@ -1,0 +1,46 @@
+.boxes span {
+	color: #fff;
+}
+
+.boxes label {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	font-family: Montserrat, sans-serif;
+	font-size: 20px
+}
+
+.boxes label:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.boxes input[type=checkbox] {
+	box-sizing: border-box;
+	appearance: none;
+	display: inline-flex;
+	vertical-align: middle;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #ffd61e;
+	border-radius: 8px;
+	cursor: pointer;
+	flex-shrink: 0;
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+}
+
+.boxes input[type=checkbox]:checked {
+	background-color: #ffd61e;
+}
+
+.boxes input[type=checkbox]:checked::before {
+	display: block;
+	content: "";
+	width: 65%;
+	height: 50%;
+	background: url("data:image/svg+xml;charset=utf8,%3Csvg width='14' height='10' viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.6953 1.78235L5.75338 9.69306C5.55728 9.88839 5.29115 10 5.01101 10C4.73087 10 4.46473 9.88839 4.26863 9.69306L0.304652 5.74468C-0.101551 5.34008 -0.101551 4.67039 0.304652 4.26578C0.710855 3.86118 1.38319 3.86118 1.78939 4.26578L5.01101 7.47471L12.2106 0.303453C12.6168 -0.101151 13.2891 -0.101151 13.6953 0.303453C14.1016 0.708057 14.1016 1.36379 13.6953 1.78235Z' fill='%23000000'/%3E%3C/svg%3E") center/contain no-repeat
+}
