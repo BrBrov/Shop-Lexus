@@ -1,0 +1,88 @@
+.text_box {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.input_content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.input_box {
+	display: flex;
+	width: 100%;
+	max-width: 49%;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.input_box:nth-child(9) {
+	margin-left: auto;
+}
+
+.input_box label,
+.text_box label {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29px;
+	color: #7b6d6d;
+}
+
+.input_box input {
+	display: flex;
+	padding: 36px 32px;
+	height: 92px;
+  flex-direction: row;
+	align-items: flex-start;
+	border: 1px solid #c5c6cc;
+	border-radius: 12px;
+	color: #fff;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 20px;
+}
+
+.text_box h4 {
+	order: 0;
+	flex: none;
+	align-self: stretch;
+	flex-grow: 0;
+	font-family: Montserrat, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 44px;
+	color: #c9c9c9;
+}
+
+.text_box h3 {
+  font-family: MyCustomFont, sans-serif;
+	font-style: normal;
+	font-weight: 467;
+	font-size: 36px;
+	line-height: 61px;
+	text-transform: none;
+	color: #fff;
+}
+
+@media (max-width:1170px) {
+	.input_box {
+		max-width: 48%;
+	}
+}
+
+@media (max-width:768px) {
+	.input_box {
+		max-width: 100%;
+	}
+
+	.text_box h3 {
+		font-size: 28px;
+	}
+}

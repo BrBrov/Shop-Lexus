@@ -1,0 +1,79 @@
+#auth {
+	padding: 120px 0 50px;
+}
+
+.auth {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.left_auth {
+	width: 100%;
+	max-width: 796px;
+}
+
+.auth_btn {
+	display: flex;
+	width: 100%;
+	height: 89px;
+	justify-content: center;
+	align-items: center;
+	background: #ffd61e;
+	border-radius: 10px;
+	font-family: "Montserrat Alternates";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 49px;
+	color: #000;
+}
+
+.auth_btn_two {
+	display: flex;
+	width: 100%;
+	height: 89px;
+	justify-content: center;
+	align-items: center;
+	background: #080f33;
+	border-radius: 10px;
+	font-family: "Montserrat Alternates";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 49px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.right_auth {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+@media (max-width:1170px) {
+	.auth {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media (max-width:768px) {
+	.auth_btn,
+	.auth_btn_two {
+		font-size: 28px;
+		width: 100%;
+	}
+
+	.right_auth img {
+		width: 100%;
+	}
+}
+
+@media (max-width:440px) {
+	.auth_btn,
+	.auth_btn_two {
+		font-size: 24px;
+	}
+}

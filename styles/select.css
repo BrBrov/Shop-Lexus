@@ -1,0 +1,47 @@
+.select__wrapper {
+	position: relative;
+	width: 100%;
+}
+
+.form_input select {
+	appearance: none;
+	height: 92px;
+	padding: 0 20px;
+	border: 1px solid #c5c6cc;
+	border-radius: 12px;
+	color: #fff;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+}
+
+.form_input select div {
+	height: 30px;
+}
+
+.select__wrapper::after {
+	position: absolute;
+	content: url('../../img/arrow-down.svg');
+	width: 64px;
+	height: 20px;
+	right: 32px;
+	top: 36px;
+	transition: all 0.5s ease-in-out;
+	pointer-events: none;
+}
+
+.select__wrapper:hover:after {
+	top: 24px;
+	transform: rotate(-90deg);
+}
+
+.form_input select option {
+	width: 100%;
+	color: #000;
+}
+
+@media (max-width: 410px) {
+	.form_input select {
+		font-size: 24px;
+	}
+}

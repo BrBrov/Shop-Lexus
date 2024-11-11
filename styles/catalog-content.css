@@ -10,7 +10,8 @@
 	padding-left: 20px
 }
 
-.catalog_content .faq-question p {
+.catalog_content .faq-question p,
+.faq-item .faq-question p {
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: 300;
@@ -18,4 +19,18 @@
 	line-height: 100%;
 	letter-spacing: -.05em;
 	color: #fff
+}
+
+.auto_rec,
+.catalog_container {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	gap: 40px
 }
