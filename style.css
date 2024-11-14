@@ -2187,6 +2187,7 @@ body {
 .ct_content {
 	display: flex;
 	width: calc(100% - 366px);
+	min-width: 360px;
 	flex-wrap: wrap;
 }
 
@@ -2346,15 +2347,17 @@ body {
 	}
 }
 
-@media (max-width: 705px) {
-	.favorite__catalog {
-		padding-top: 126px;
-	}
-	
+@media (max-width: 768px) {
 	.catalog__wrapper-like {
 		flex-direction: column;
 		align-items: center;
 		gap: 20px;
+	}
+}
+
+@media (max-width: 705px) {
+	.favorite__catalog {
+		padding-top: 126px;
 	}
 }
 
