@@ -1018,7 +1018,7 @@ body {
 	appearance: none;
 	width: 222px;
 	left: 35px;
-	top: 17px;
+	top: 38px;
 }
 
 .faq-answer input[type=range]::-webkit-slider-runnable-track,
@@ -1032,7 +1032,7 @@ body {
 	appearance: none;
 	width: 12px;
 	height: 12px;
-	margin-top: -22px;
+	margin-top: -10px;
 	border-radius: 50%;
 	background-color: #fff;
 	pointer-events: auto;
@@ -1860,9 +1860,11 @@ body {
 /*---------range-multiple---------*/
 .range__contianer {
 	position: relative;
+	height: 120px;
 }
 
 .range__track {
+	position: absolute;
 	width: 222px;
 	height: 2px;
 	margin: 33px auto 25px 15px;
@@ -1870,7 +1872,10 @@ body {
 }
 
 .price-range {
+	position: absolute;
 	display: flex;
+	width: 255px;
+	top: 60px;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -2208,6 +2213,7 @@ body {
 	height: 77px;
 	border: 2px solid #ffd61e;
 	border-radius: 14px;
+	font-family: "Montserrat", sans-serif;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 24px;
