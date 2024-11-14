@@ -100,7 +100,7 @@ body {
   h2 {
     font-size: 64px;
     line-height: 78px;
-    max-width: 684px
+    max-width: 684px;
   }
 }
 
@@ -2421,7 +2421,7 @@ body {
 .auth__title {
 	text-align: start;
 	width: 100%;
-	font-family: MyCustomFont;
+	font-family: MyCustomFont, sans-serif;
 	font-style: normal;
 	font-weight: 467;
 	font-size: 32px;
@@ -2431,7 +2431,16 @@ body {
 
 @media (min-width:768px) and (max-width:1430px) {
 	.auth__wrapper {
+		padding: 0 20px;
+	}
+}
+
+@media (max-width: 1170px) {
+	.auth__title {
+		display: block;
+		width: 100%;
 		max-width: 796px;
+		margin: 0 auto;
 	}
 }
 
